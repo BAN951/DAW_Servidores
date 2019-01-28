@@ -1,0 +1,36 @@
+* {margin: 0; padding: 0;}
+header { 
+    padding-top: 1em; 
+    position: absolute; 
+    width: 100%; 
+}
+header h1 { 
+    float: left; 
+    margin: 1em; 
+}
+.userSection { 
+    float: right; 
+    padding: 2em; 
+}
+
+.userSection .userbtn {
+    margin: .5em;
+    padding: 1em;
+}
+
+.clear { clear: both; }
+main {
+    position: absolute; 
+    top: 20%; 
+}
+main div {
+    padding: 1em 2em; 
+}
+#paginaInicial h1 {
+    margin-bottom: 1em; 
+}
+footer {
+    position: absolute;
+    bottom: 5%; 
+    width: 100%; 
+}

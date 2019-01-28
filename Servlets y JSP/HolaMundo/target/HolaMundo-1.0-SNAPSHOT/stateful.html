@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            body div form bloque {display: block; padding: 10px 5px; margin-left: 1em; }
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>Servlet stateful</h1>
+            <form id="stateful" method="POST" action="ServletStateful">
+                <div class="bloque">
+                    <label for="edad">Edad:</label>
+                    <input id="edad" type="number" name="edad" min="0">
+                </div>
+                <div class="bloque">
+                    <label for="password">Password:</label>
+                    <input id="password" type="text" name="password">
+                    <!-- Los password suele ser type password, en este caso usamos text-->
+                </div>
+                <div class="bloque">
+                    <label for="dni">DNI:</label>
+                    <input id="dni" type="text" name="dni">
+                </div>
+                <div class="bloque">
+                    <input type="submit">
+                </div>
+            </form> 
+        </div>
+    </body>
+</html>

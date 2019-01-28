@@ -1,0 +1,4 @@
+des/test/hibernate/Entities/Author.class
+des/test/hibernate/TestBooks.class
+des/test/hibernate/Entities/Book.class
+des/test/hibernate/HibernateUtil.class

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta charset="utf-8"/>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h1>Añadir productos</h1>
+        <form name="form1" action="ServletAddProduct" method="POST">
+            <label for="id">ID:</label>
+            <input type="number" name="id"/>
+            <br/>
+            <select name="cmbProductos">
+                <option value="BOLIGRAFO">BOLIGRAFO</option>
+                <option value="TONER">TONER</option>
+                <option value="LAPIZ">LAPIZ</option>
+                <option value="IMPRESORA">IMPRESORA</option>
+                <option value="CUADERNO">CUADERNO</option>
+            </select>
+            <br/>
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" name="cantidad"/>
+        </form>
+    </body>
+</html>
