@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package net.reghours.datamodel.Entities;
+package net.reghours.datamodel.entities;
 
 import java.io.Serializable;
 import java.util.Collection;
@@ -45,26 +45,37 @@ public class User implements Serializable {
     @Basic(optional = false)
     @Column(name = "userId")
     private Integer userId;
+    
     @Basic(optional = false)
     @NotNull
     @Size(min = 1, max = 32)
     @Column(name = "username")
     private String username;
+    
     @Basic(optional = false)
     @NotNull
     @Size(min = 1, max = 48)
     @Column(name = "firstname")
     private String firstname;
+    
     @Basic(optional = false)
     @NotNull
     @Size(min = 1, max = 90)
     @Column(name = "lastname")
     private String lastname;
+    
+    @Basic(optional = false)
+    @NotNull
+    @Size(min = 1, max = 68)
+    @Column(name = "email")
+    private String email;
+    
     @Basic(optional = false)
     @NotNull
     @Size(min = 1, max = 64)
     @Column(name = "passwd")
     private String passwd;
+    
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "user")
     private Collection<Timerecord> timerecordCollection;
 
@@ -113,6 +124,14 @@ public class User implements Serializable {
 
     public void setLastname(String lastname) {
         this.lastname = lastname;
+    }
+    
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getPasswd() {

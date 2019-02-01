@@ -20,8 +20,8 @@
          
         <!--Mappings-->
          
-        <mapping class="net.reghours.datamodel.Entities.User"></mapping>
-        <mapping class="net.reghours.datamodel.Entities.Timerecord"></mapping> 
+        <mapping class="net.reghours.datamodel.entities.User"></mapping>
+        <mapping class="net.reghours.datamodel.entities.Timerecord"></mapping> 
          
         <!--<mapping class="domini.companyia.projecte.packageEntities.entitat"></mapping>-->       
          
